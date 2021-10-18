@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/style.css">
   <title>Consulta CEP</title>
 </head>
 <body>
@@ -11,34 +12,33 @@
     <div class="form-group">
       <label for="cep">CEP:</label>
       
-      <input type="text" id="cep" placeholder="00000-000" max="9">
+      <input type="text" id="cep" placeholder="00000-000" maxlength="9">
     </div>
 
     <div class="form-group">
-      <label for="lugadouro">
-        Lugadouro:
+      <label for="logradouro">
+        Logradouro:
       </label>
-      <input type="text" id="lugadouro" placeholder="Rua fulano de tal">
+      <input type="text" id="logradouro" placeholder="Rua fulano de tal" disabled>
     </div>
 
     <div class="form-group">
       <label for="bairro">
         Bairro:
       </label>
-      <input type="text" id="bairro" placeholder="Rua de baixo">
+      <input type="text" id="bairro" placeholder="Rua de baixo" disabled>
+    </div>
+
+    <div class="form-group">
+      <label for="localidade" > Localidade:
+      </label><input type="text" id="localidade" placeholder="Salvador" disabled>
     </div>
 
     <div class="form-group">
       <label for="uf">UF:</label>
-      <input type="text" id="uf" placeholder="BA">
+      <input type="text" id="uf" placeholder="BA" disabled >
     </div>
-
-    <div class="form-group">
-      <label for="">
-      </label><input type="text">
-    </div>
-
-
   </div>
+  <script src="./src/app.js"></script>
 </body>
 </html>
